@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0 0 0 0px;
+  }
+
+.linktext {
+	font-family:Calibri;
+	font-size:20px;
+	color:#000;
+	line-height:1.8;
+	padding-left:5px;
+  }
+
+.logintext{
+	font-family:Calibri;
+	font-size:17px;
+	color:#fff;
+	line-height:1.2;
+  }
+
+.formborder {
+	width:150px;
+	height:19px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #e1e1e1;
+	border-right-color: #e1e1e1;
+	border-bottom-color: #e1e1e1;
+	border-left-color: #e1e1e1;
+	padding-top:1px;
+	background-color:#525b60;
+  color:#fff;
+  font-size:11px;
+  }
+
+.navigation ul {
+	margin:0px;
+	padding:0px;
+  }
+
+.navigation ul li {
+	list-style-type:none;
+	display:inline;
+	line-height:4.5;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	padding-left:10px;
+  }
+
+.navigation ul li a{
+	list-style-type:none;
+	display:inline;
+	line-height:4.5;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+	}
+
+.navigation ul li a:hover{
+	list-style-type:none;
+	display:inline;
+	line-height:4.5;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-decoration:underline;
+  }
+
+.error {
+  font-size:12px;
+	color:Red;
+}
+
+.td1 {
+  font-size:16px;
+	color: rgb(153,0,0); 
+}
+
+.textbox {
+  border-width: 1px; 
+  color: rgb(245,255,243);
+  font-family: "Times New Roman";
+  font-weight: bold;  
+  border-right-color:rgb(0,102,204);
+  border-bottom-color:rgb(204,51,255);
+  border-collapse: collapse;
+  background-color: rgb(0,153,204);
+}
+
+.table1 {
+  border-width: 1px;
+  color: rgb(153,0,0); 
+  border-right-color: rgb(0,153,204); 
+  border-bottom-color: rgb(0,153,204); 
+  border-collapse: collapse; 
+  background-color: White;
+  }
+
+.textbox1 { 
+  border-width: 1px; 
+  color: rgb(153,0,0);  
+  border-right-color: rgb(153,0,0); 
+  border-left-color: red; 
+  border-top-color: red; 
+  border-bottom-color: rgb(153,0,0);  
+  border-collapse: collapse; 
+  background-color: white;
+}
+
+.textbox2
+{ 
+  border-width: 1px; color: Blue;
+  font-family: "Times New Roman";
+  border-right-color: rgb(153,0,0);
+  border-left-color: red;
+  border-top-color: red; 
+  border-bottom-color: rgb(153,0,0);
+  border-collapse: collapse; 
+  background-color: rgb(184,226,253);
+}
+
+.textbox3
+{
+  font-size:13px; 
+  border-width: 1px; 
+  color: Blue;  
+  font-family: "Times New Roman";
+  border-right-color: rgb(153,0,0); 
+  border-left-color: red; 
+  border-top-color: red; 
+  border-bottom-color: rgb(153,0,0);
+  border-collapse: collapse; 
+  background-color: rgb(184,226,253);
+}
+
+.button1
+{ 
+  border-width: 1px; color: Blue;
+  font-family: "Times New Roman";
+  border-right-color: rgb(153,0,0);
+  border-left-color: red;
+  border-top-color: red; 
+  border-bottom-color: rgb(153,0,0);
+  border-collapse: collapse; 
+  background-color: #cccccc;
+}
+#calender 
+{
+	width: 200px;
+	font-family: ms sans serif, sans serif;
+	font-size: 7pt;
+}
+
+#calenderTable 
+{
+	border-style: outset;
+	border-width: 2px;
+	border-color: black;
+	background-color: #EEE;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+}
+
+.normalDay
+{
+	border: 1px dotted black;
+	cursor: pointer;
+}
+
+.hlDay {
+	border: 1px black;
+	background-color: #585858;
+	color: #E6E6E6;
+	cursor: pointer;
+	}
+
+.toDay {
+	border: 1px solid #E70;
+	background-color: #FD8;
+	color: #E70;
+	font-weight: bold;
+	cursor: pointer;
+	}
+
+.choosenDay {
+    border: 1px #000000;
+    background-color: #585858;
+    color: #E6E6E6;
+    font-weight: bold;
+    cursor: pointer;
+	}
+  
+  .blinkytext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-decoration: blink;
+    font-style: normal;
+  }
+  
+  .thumbnail{
+    position: relative;
+    z-index: 0;
+  }
+
+  .thumbnail:hover{
+    background-color: transparent;
+    z-index: 50;
+  }
+
+  .thumbnail span{ /*CSS for enlarged image*/
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    left: -1000px;
+    border: 1px dashed gray;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+  }
+
+    .thumbnail span img{ /*CSS for enlarged image*/
+        border-width: 0;
+        padding: 2px;
+    }
+
+    .thumbnail:hover span{ /*CSS for enlarged image on hover*/
+        visibility: visible;
+        top: 0;
+        left: 80px; /*position where enlarged image should offset horizontally */
+    }
+    
+    .tabStrip ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .tabStrip li {
+        margin: 0 2px 0 0;
+        list-style-type: none;
+        float: left;
+    }
+    .tabLink {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        background: #e8e8e8;
+        border: #dadada solid;
+        border-width: 1px 1px 0 1px;
+        color: #8a8a8a;
+    }
+    .tabLinkActive {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        background: #e0e0e0;
+        border: #c0c0c0 solid;
+        border-width: 1px 1px 0 1px;
+        color: #0066ff;
+    }
+    .tabContent {        
+        display: none;
+    }
+    .tabContentActive {
+        display: block;
+        clear: both;
+        background: #f0f0f0;
+        border: 0px #dedede solid;
+        padding: 0px;
+    }
+    
+    

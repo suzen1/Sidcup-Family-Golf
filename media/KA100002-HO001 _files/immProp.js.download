@@ -1,0 +1,91 @@
+      
+  //Immoval Property Module Validation from Client Side-----------------------------
+  
+    //Property Image Report  
+    
+    //Add Immovable Property Photo From Add Module
+    function addImmPropImage(prop,wakf_id,prop_id) {
+        var left = (screen.width/2)-(550/2);
+        var top = (screen.height/2)-(200/2);
+        window.open("uploadphoto.jsp?opt="+prop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"","AddImmPropPhoto",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=550,height=200,top='+top+',left='+left);      
+    }
+    
+    //Add Immovable Property Photo From Update Module
+    function addImmImage(nop,wakf_id,prop_id,frm_opt) {
+        var left=(screen.width/2)-(700/2);
+        var top=(screen.height/2)-(300/2);
+        window.open("AddPropPhotoAction.do?opt=view&nop="+nop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"&frm_opt="+frm_opt+"","AddImmPropPhoto",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=700,height=300,top='+top+',left='+left);              
+    }
+   
+    //Update Immovable Property Photo From Update Module  
+    function updImmImage(img_loc) {
+        var left = (screen.width/2)-(550/2);
+        var top = (screen.height/2)-(250/2);
+        window.open("UpdImage.jsp?img_loc="+img_loc+"","UpdImmPropPhoto",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=550,height=250,top='+top+',left='+left);      
+    }
+  
+    //View Immovable Property Photo
+    function viewImmImage(img_loc) {
+        var left = (screen.width/2)-(800/2);
+        var top = (screen.height/2)-(600/2);            
+        window.open("getImage1.jsp?mut_img_path="+img_loc+"","ViewImmPropPhoto",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=800,height=600,top='+top+',left='+left);            
+    } 
+  
+    //Property Survey Report   
+    
+    //Add Immovable Property Survey Detail Report From Survey Add Module
+    function addImmPropSurveyReportAdd(prop,wakf_id,prop_id,surv_id) {
+        var left = (screen.width/2)-(550/2);
+        var top = (screen.height/2)-(250/2);
+        window.open("uplSurvFile.jsp?opt="+prop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"&prop_surv_id="+surv_id+"","addImmPropSurveyReport",'Toolbar=0,Location=0,Menubar=0,resizable=0,scrollbars=0,status=0,width=550,height=250,top='+top+',left='+left);      
+    }
+  
+    //Add Immovable Property Survey Report From Update Module
+    function addImmPropSurveyReport(surv_done,prop,wakf_id,prop_id,prop_surv_id) {
+        if(surv_done=="Y") {
+            var left = (screen.width/2)-(550/2);
+            var top = (screen.height/2)-(200/2);
+            window.open("addPropSurvReport.jsp?prop="+prop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"&prop_surv_id="+prop_surv_id+"","immPropSurveyReportAdd",'Toolbar=0,Location=0,Menubar=0,resizable=0,scrollbars=0,status=0,width=550,height=200,top='+top+',left='+left);      
+        }
+        else {
+            alert("Report cannot be uploaded! Survey not done!! ");
+        }
+    }
+  
+    //Update Immovable Property Survey Report 
+    function updImmPropSurveyReport(rep_loc) {
+        var left = (screen.width/2)-(550/2);
+        var top = (screen.height/2)-(200/2);
+        window.open("updReport.jsp?img_loc="+rep_loc+"","immPropReportUpdate",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=550,height=200,top='+top+',left='+left);      
+    }
+  
+    //View Immovable Property Survey Report 
+    function viewImmPropSurveyReport(rep_loc) {
+        var left = (screen.width/2)-(450/2);
+        var top = (screen.height/2)-(350/2);            
+        window.open("getPDF.jsp?mut_img_path="+rep_loc+"","immPropReportPDFView",'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=450, height=350, top='+top+', left='+left);            
+    }
+  
+    //Add Inspection Report
+    function addInspReport(nop,wakf_id,prop_id,frm_opt) {
+        var left=(screen.width/2)-(700/2);
+        var top=(screen.height/2)-(300/2);
+        if(frm_opt=='frm_upd') {
+            if(document.getElementById('ir2').value=="") {
+                alert("Please enter Inspection Date");
+                document.getElementById('ir2').focus();
+                return false;
+            }
+            if(document.getElementById('ir3').value=="") {
+                alert("Please enter Inspector Name ");
+                document.getElementById('ir3').focus();
+                return false;
+            }
+            else {
+                window.open("UplInspRepAction.do?opt=view&nop="+nop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"&frm_opt="+frm_opt+"","addInspReport",'Toolbar=0,Location=0,Menubar=0,resizable=0,scrollbars=0,status=0,width=700,height=300,top='+top+',left='+left);      
+            }
+        }
+        else {
+            window.open("UplInspRepAction.do?opt=view&nop="+nop+"&wakf_id="+wakf_id+"&prop_id="+prop_id+"&frm_opt="+frm_opt+"","addInspReport",'Toolbar=0,Location=0,Menubar=0,resizable=0,scrollbars=0,status=0,width=700,height=300,top='+top+',left='+left);      
+        }
+    }
