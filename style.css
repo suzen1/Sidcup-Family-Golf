@@ -3,15 +3,24 @@
   margin: 0;
   color: white;
   font-family: "Montserrat";
+  /* overflow-x: hidden; */
+  
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
-
+nav #nav-main #icon-bar {
+  height: 10vh;
+  width: 5vw;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
 
 nav img {
   height: 8vh;
@@ -43,6 +52,8 @@ nav {
   z-index: 999;
   position: fixed;
 }
+
+
 
 .corsur {
   height: 3vh;
@@ -183,7 +194,8 @@ video {
   text-align: center;
   z-index: 11;
 }
-#about #image1{
+
+#about #image1 {
   border-radius: 12px;
   height: 30vh;
   width: 15vw;
@@ -194,11 +206,11 @@ video {
 
 #about #image1 img {
   border-radius: 12px;
-  height: 30vh;
+  height: 29vh;
   width: 15vw;
   object-fit: cover;
   position: relative;
- 
+
 }
 
 #abut-contant {
@@ -231,6 +243,10 @@ video {
   object-fit: cover;
 }
 
+.abut-for-phone {
+  display: none;
+}
+
 .card-contenar {
   margin-top: 5%;
   /* background-color: rosybrown; */
@@ -240,7 +256,7 @@ video {
   align-items: center;
   justify-content: center;
   gap: 9vw;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 #card {
@@ -504,8 +520,8 @@ footer {
   background-color: #95c11e;
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
-  
+  justify-content: space-evenly;
+
 }
 
 footer .img1 {
@@ -568,7 +584,7 @@ footer>img {
   color: #000;
   font-weight: 600;
   line-height: 3vh;
-  
+
   margin-bottom: 8px;
 }
 
@@ -577,17 +593,329 @@ footer>img {
   font-size: 1.5vw;
   margin-top: -10%;
 }
+
 .copy-right {
-width: 100%;
-background-color:#95c11e;
+  width: 100%;
+  background-color: #95c11e;
 }
-.copy-right h6{
+
+.copy-right h6 {
   color: #000;
   font-weight: 900;
 }
 
-.copy-right h6 a{
+.copy-right h6 a {
   width: 100%;
   color: #000;
   text-decoration: none;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+
+  /* Navigation */
+  nav #nav-main {
+    padding: 0 5vw;
+    gap: 2vw;
+  }
+
+  nav h1 {
+    font-size: 1.2vw;
+  }
+
+
+
+  /* Page 1 */
+  #page1 h1 {
+    font-size: 7vw;
+  }
+
+  #page1 h1::before {
+    font-size: 7vw;
+  }
+
+  #page1 h3 {
+    font-size: 3vh;
+  }
+
+  #page1 h5 {
+    width: 60%;
+    font-size: 2vh;
+  }
+
+  /* About Section */
+  #about {
+    flex-direction: column;
+    gap: 3vh;
+  }
+
+  #about #image1,
+  #about #image2 {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  #about #image1 img,
+  #about #image2 img {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  #abut-contant p {
+    font-size: 2.5vw;
+    width: 90%;
+  }
+
+  /* Cards */
+  .card-contenar {
+    flex-direction: column;
+    height: auto;
+    gap: 3vh;
+  }
+
+  #card {
+    width: 70%;
+    height: 50vh;
+  }
+
+  /* Page 3 */
+  .page3 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #laft-contenar-slider,
+  #right-section-text {
+    width: 100%;
+    height: auto;
+    padding: 2vh;
+  }
+
+  .swiper {
+    width: 90%;
+    height: 50vh;
+  }
+
+  #right-section-text h3 {
+    font-size: 5vh;
+  }
+
+  #right-section-text p {
+    font-size: 2vw;
+    width: 90%;
+  }
+
+  /* Page 5 */
+  .page5 {
+    flex-direction: column;
+    height: auto;
+    gap: 3vh;
+  }
+
+  .elem {
+    width: 80%;
+    height: 50vh;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 5vh 0;
+  }
+
+  footer .img1,
+  .img2-logo {
+    width: 50%;
+    height: auto;
+  }
+
+  #f2,
+  #f3,
+  #f4 {
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 3vw;
+  }
+
+  #f4 h4 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+
+  /* Mobile-specific adjustments */
+  nav {
+    height: 10vh;
+    overflow: hidden;
+
+
+  }
+
+  video {
+    overflow: hidden;
+  }
+
+  nav #nav-main {
+
+    top: 0px;
+    gap: 60vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+
+  }
+
+  nav img {
+    width: 20vw;
+    height: auto;
+    left: 0;
+  }
+
+  nav #nav-main h1 {
+    display: none;
+  }
+
+  nav #nav-main #icon-bar {
+    font-size: x-large;
+    display: block;
+    margin-top: 5vh;
+  }
+
+  /* Page 1 */
+  #page1 {
+    width: 100%;
+  }
+
+  #page1 h1 {
+    font-size: 10vw;
+  }
+
+  #page1 h1::before {
+    font-size: 10vw;
+  }
+
+  #page1 h3 {
+    font-size: 2.5vh;
+  }
+
+  #page1 h5 {
+    width: 80%;
+    font-size: 1.8vh;
+  }
+
+  /* Scrolling Text */
+  #scrolar-in h4 {
+    font-size: 8vw;
+  }
+
+  /* Green Section */
+  .green {
+    flex-direction: column;
+    height: auto;
+    padding: 3vh 0;
+
+  }
+
+  #about {
+    display: none;
+  }
+
+  .abut-for-phone {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    gap: 5vh;
+
+  }
+
+  #abut-contant-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vh;
+    
+  }
+  #abut-contant-p h1{
+    font-size: 8vh;
+  }
+
+  #image1-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+    border-radius: 5%;
+  }
+
+  #image2-p  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5%;
+  }
+
+  #image2-p img{
+    width: 81vw;
+    height: 34vh;
+  }
+  #image1-p img{
+    width: 81vw;
+    height: 34vh;
+  }
+  .green h4 {
+    width: 100%;
+    font-size: 3vh;
+    padding: 2vh;
+  }
+
+  .green img {
+    width: 50%;
+    height: 10vh;
+  }
+
+  /* Page 4 Quote */
+  .page4 p {
+    width: 80vw;
+    font-size: 2.5vh;
+  }
+
+  /* Footer */
+  footer {
+    padding: 3vh 0;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 4vw;
+  }
+
+  #f4 h4 {
+    font-size: 3vw;
+  }
+
+  #f4 h3 {
+    font-size: 3.5vw;
+  }
+
+  /* Cursor Effects */
+  .corsur,
+  .carsur-blur {
+    display: none;
+  }
 }
