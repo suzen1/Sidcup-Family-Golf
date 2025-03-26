@@ -97,7 +97,7 @@ function holl() {
   h4all.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
       cr.style.scale = 4;
-      cr.style.border = "0.1px solid #fff";
+      cr.style.border = "1px solid #fff";
       cr.style.backgroundColor = "transparent";
     });
     elem.addEventListener("mouseleave", function () {
