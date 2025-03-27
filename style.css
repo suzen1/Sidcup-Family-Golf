@@ -858,8 +858,8 @@ footer>img {
     display: flex;
     justify-content: center;
     align-items: center;
-    ;
-    border-radius: 5%;
+    
+    border-radius: 9%;
   }
 
   #image2-p  {
@@ -867,16 +867,27 @@ footer>img {
     justify-content: center;
     align-items: center;
     
-    border-radius: 5%;
+    border-radius: 9%;
   }
 
   #image2-p img{
     width: 81vw;
     height: 34vh;
+    border-radius: 9%;
   }
   #image1-p img{
     width: 81vw;
     height: 34vh;
+    border-radius: 9%;
+  }
+  .card-contenar{
+    display: none;
+  }
+  .green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
   .green h4 {
     width: 100%;
@@ -887,13 +898,48 @@ footer>img {
   .green img {
     width: 50%;
     height: 10vh;
+    display: none;
   }
-
+.page3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  #right-section-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+  }
+  #right-section-text p{
+    text-align: center;
+    font-size: 2vh;
+  }
   /* Page 4 Quote */
   .page4 p {
     width: 80vw;
     font-size: 2.5vh;
   }
+  .page4 .colan-laft{
+    top: 16%;
+    left: 4%;
+  }
+ .page4 .colan-right{
+  top: 68%;
+    right: 8%;
+ }
+ .page5 h1{
+  top: -6%;
+  font-weight: 600;
+ }
+ .elem h2{
+  font-size: 5vw;
+ 
+ }
 
   /* Footer */
   footer {
