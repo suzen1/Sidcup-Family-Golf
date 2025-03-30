@@ -943,16 +943,27 @@ footer>img {
 
   /* Footer */
   footer {
-    padding: 3vh 0;
+    height: 15vh;
+    flex-direction: row;
+    margin-top: 0vh;
+    
   }
+ 
+  footer .img2-logo {
+    display: none;
+  }
+  footer .img1, .img2-logo {
+    width: 50%;
+    height: 24vh;
+}
 
-  #f2 h3,
-  #f3 h3 {
-    font-size: 4vw;
+  #f2 h3{
+    font-size: 3vw;
   }
 
   #f4 h4 {
-    font-size: 3vw;
+    font-size: 2vw;
+    line-height: 1.5vh;
   }
 
   #f4 h3 {
