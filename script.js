@@ -4,7 +4,7 @@ var cr = document.querySelector(".corsur")
 var blur = document.querySelector(".carsur-blur")
 var tilt = document.querySelectorAll("#card")
 document.addEventListener("mousemove", function (dets) {
-  cr.style.left = dets.x + 13 + "px"
+  cr.style.left = dets.x + 5 + "px"
   cr.style.top = dets.y + 5 + "px"
   cr.style.duration = 5
   blur.style.left = dets.x + "px"
